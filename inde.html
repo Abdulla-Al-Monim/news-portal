@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    
+</head>
+<body>
+    <section class="containt">
+        <div class="header">
+            <h1>Javascript tutorial</h1>
+        </div>
+        <div class="maincontaint">
+
+
+            <button id="mybtn" onclick="turnRed()">On Clik</button>
+            <button id="mybtn" onmouseenter="turnRed()">onmouseenter</button>
+            <button id="btn">addEventListener</button>
+            <h1 id="result_1"></h1>
+            <h1 id="result_2"></h1>
+            <p id="abcd"></p>
+            <!-- <h1 id="result"></h1>-->
+
+            <button id="btn">addEventListener</button>
+            <h1 id="result_2"></h1>
+            <script>
+                var btn = document.getElementById("btn");
+                btn.addEventListener('mouseenter', function MyFunc() {
+                    document.getElementById("result_2").innerHTML = "Hellow world!!";
+                });
+            </script>
+
+
+
+
+            <script>
+                //alart
+                document.write("<h1> Event/Alart</h1>" + "<br/>")
+                //onclick/onmouseenter
+                function turnRed() {
+                    alert('Turn red working: !! Hurreeeeee');
+                };
+                var btn = document.getElementById("btn");
+                btn.addEventListener('mouseenter', function MyFunc() {
+                    document.getElementById('result_2').innerHTML = "Hellow world!!";
+                });
+
+                //function
+                document.write("<h1>function</h1>" + "<br/>")
+                function MyFunction() {
+                    x = 10;
+                    y = 15;
+                    z = x + y;
+                    return z;
+                }
+                document.getElementById("result_1").innerHTML = MyFunction();
+
+
+
+
+
+                document.write("My name is Shahanur <br>");
+                var string = "string";
+                number = "number";
+                boolean = "boolean";
+                objects = "objects";
+                document.write("<h1>data type</h1> <br> " + "1: " + string + "-like: text" + "<br>" + "2: " + number + "-like: 1234.5" + "<br>" + "3: " +
+                    boolean + "-like: true/false" + "<br>" + "4: " + objects + "<br>");
+                document.write('<h1>var aray writing rules</h1>' +
+                    ' <br> ' +
+                    ' var aray = ["One", "Two", "Three"] ' +
+                    ' <br> '
+                );
+                var aray = ["One", "Two", "Three"]
+                document.write("<h1>Out put</h1>" +
+                    "aray: " + aray[0] + "<br>" +
+                    "aray: " + aray[1] + "<br>" +
+                    "aray: " + aray[2] + '<br>'
+                );
+                /*
+                document.write("<h1>var object</h1>");
+                var a = {
+                    rangpur: "Badal",
+                    nilphamari: "rayhan"
+                };
+                document.write(a.nilphamari "<br>");
+                var a = 200;
+                a + = 100;
+                document.write(a);*/
+                //fanction
+                function tonoy() {
+                    var a = 10;
+                    var b = 15;
+                    var z = a + b;
+                    return z;
+                }
+                document.write("<h1>funtion</h1>" + "<br>" + tonoy());
+
+
+                function MyFunction_2(x, y) {
+                    z = x + y;
+                    return z;
+                }
+                document.write(MyFunction_2(20, 80) + "<br>");
+
+                function localScopo() {
+                    var x = 200;
+                    document.write("I am local scope: " + x + "<br><br>");
+                }
+                localScopo();
+                //globle scope
+                var x = 100;
+                document.write("I am global scope: " + x + "<br>")
+                //Auto scope
+                function autoScope() {
+                    auto = 1500;
+                }
+                autoScope();
+
+                document.write("I am auto scope" + auto + "<br>");
+                //this keyword
+                var person = {
+                    firstName: "John",
+                    lastName: "Doe",
+                    id: 5566,
+                    fullName: function() {
+                        return this.firstName + " " + this.lastName;
+                    }
+                };
+                var fetch = person.fullName();
+                document.write("<h2>This key wird: </h2>" + fetch + "<br/>");
+                //string mathot
+                var strMethot = "Bangladesh";
+                document.write("<h2>strmethot is:</h2>" + "<br/>" + strMethot.charAt(8) + "<br/>");
+                document.write(strMethot.indexOf("la") + "<br/>");
+                document.write(strMethot.replace("h", "i") + "<br/>");
+                document.write(strMethot.search("d") + "<br/>");
+                //string to number/number to string
+                document.write("<h1>string to number/number to string</h1>" + "<br/>");
+                var number = 200.987654;
+                //var string = "Shahanur";
+                document.write(number.toString() + "<br/>");
+                document.write(number.toFixed(2) + "<br/>");
+                //number methot
+                var x = "200";
+                var y = 400;
+                var total = Number(x) + y;
+                document.write(total);
+            </script>
+            
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </section>
+</body>
+</html>

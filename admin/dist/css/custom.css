@@ -1,0 +1,25 @@
+/** action bar **/
+.action-bar ul{
+	padding: 0!important;
+	margin: 0!important;
+}
+.action-bar ul li{
+	list-style: none;
+	display: inline;
+	padding: 0!important;
+	margin: 0!important;
+}
+.action-bar ul li .fa-edit{
+	color: #3194A4;
+
+}
+.action-bar ul li .fa-trash{
+	color: #C82333;
+	
+}
+/** model content***/
+.model-confirmation ul li{
+	list-style: none!important;
+	display: inline!important;
+	margin: 0 5px;
+}
